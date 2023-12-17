@@ -1,5 +1,6 @@
 import axios from 'axios'
 import axiosExtra from 'axios-extra'
+const http = axios
 
 const httpExtra = axiosExtra.create({
     maxConcurrent: 5, //并发为1
@@ -19,7 +20,7 @@ http.interceptors.response.use(response => {
  * @returns {Promise<AxiosResponse<any>>}
  */
 const taskInfo = (identifier) => {
-    return this.axios.get(`/api/minio/tasks/${identifier}`)
+    return http.get(`/api/minio/tasks/${identifier}`)
 }
 
 /**
@@ -31,7 +32,7 @@ const taskInfo = (identifier) => {
  * @returns {Promise<AxiosResponse<any>>}
  */
 const initTask = ({ identifier, fileName, totalSize, chunkSize }) => {
-    return this.axios.post('/api/minio/tasks', { identifier, fileName, totalSize, chunkSize })
+    return http.post('/api/minio/tasks', { identifier, fileName, totalSize, chunkSize })
 }
 
 /**
@@ -41,7 +42,7 @@ const initTask = ({ identifier, fileName, totalSize, chunkSize }) => {
  * @returns {Promise<AxiosResponse<any>>}
  */
 const preSignUrl = ({ identifier, partNumber }) => {
-    return this.axios.get(`/api/minio/tasks/${identifier}/${partNumber}`)
+    return http.get(`/api/minio/tasks/${identifier}/${partNumber}`)
 }
 
 /**
@@ -50,7 +51,7 @@ const preSignUrl = ({ identifier, partNumber }) => {
  * @returns {Promise<AxiosResponse<any>>}
  */
 const merge = (identifier) => {
-    return this.axios.post(`/api/minio/tasks/merge/${identifier}`)
+    return http.post(`/api/minio/tasks/merge/${identifier}`)
 }
 
 export {
