@@ -54,15 +54,15 @@ router.beforeEach((to, from, next) => {
     if (typeof (to.meta?.title) === 'string') {
         document.title = to.meta?.title + ' | FeiBack';
     }
-    // const isUnAuthorized = unAuthorized();
-    // if (to.fullPath.startsWith('/sign') && !isUnAuthorized) {
-    //     next('/home')
-    // } else if (to.fullPath.startsWith('/home') && isUnAuthorized) {
-    //     next('/sign')
-    // } else {
-    //     next()
-    // }
-    next()
+    const isUnAuthorized = unAuthorized();
+    if (to.fullPath.startsWith('/sign') && !isUnAuthorized) {
+        next('/home')
+    } else if (to.fullPath.startsWith('/home') && isUnAuthorized) {
+        next('/sign')
+    } else {
+        next()
+    }
+    // next()
 })
 
 export default router
