@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 export default {
     name: 'UpFiles'
 }
@@ -7,7 +7,7 @@ export default {
 import md5 from "@/api/md5";
 import { taskInfo, initTask, preSignUrl, merge } from '@/api/minio';
 import { ElNotification } from "element-plus";
-import Queue from 'promise-queue-plus';
+import QueueUpFile from 'promise-queue-plus';
 import axios from 'axios'
 import { ref } from 'vue'
 
@@ -210,5 +210,32 @@ const handleRemoveFile = (uploadFile, uploadFiles) => {
                 请拖拽文件到此处或 <em>点击此处上传</em>
             </div>
         </ElUpload>
+    </ElCard>
+</template> -->
+
+
+
+
+<script>
+export default {
+    name: 'UpFiles'
+}
+</script>
+<script setup>
+
+
+</script>
+
+<template>
+    <ElCard style="width: 80%; margin: 80px auto" header="文件上传">
+        <!-- <ElUpload class="upload-demo" drag action="/" multiple :http-request="handleHttpRequest"
+            :on-remove="handleRemoveFile">
+            <el-icon class="el-icon--upload">
+                <IEpUploadFilled />
+            </el-icon>
+            <div class="el-upload__text">
+                请拖拽文件到此处或 <em>点击此处上传</em>
+            </div>
+        </ElUpload> -->
     </ElCard>
 </template>
