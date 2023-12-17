@@ -9,5 +9,5 @@ import UpFiles from '@/components/UpFiles.vue'
 Axios.defaults.baseURL = 'http://localhost:8881'
 const app = createApp(App)
 app.use(Router)
-app.mount('#app')
 app.component('UpFiles', UpFiles)
+app.mount('#app')
