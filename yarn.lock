@@ -497,6 +497,13 @@ asynckit@^0.4.0:
   resolved "https://registry.npmmirror.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
 
+axios-extra@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.npmmirror.com/axios-extra/-/axios-extra-0.0.8.tgz#267982c30d8bafec2717c8034f2b30266b45eefc"
+  integrity sha512-dSPeuwTx2Pyvy2gAfOVRh1HHpvIVKbJ34yvq1nXBQUk7AAYwFROapFLN4wyWeQflJHR/VC3S13SgBB8IzAB3ZQ==
+  dependencies:
+    promise-queue-plus "^1.2.2"
+
 axios@^1.6.2:
   version "1.6.2"
   resolved "https://registry.npmmirror.com/axios/-/axios-1.6.2.tgz#de67d42c755b571d3e698df1b6504cde9b0ee9f2"
@@ -515,6 +522,11 @@ binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmmirror.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
+
+bluebird@^3.0.0:
+  version "3.7.2"
+  resolved "https://registry.npmmirror.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
+  integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
 brace-expansion@^2.0.1:
   version "2.0.1"
@@ -582,6 +594,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmmirror.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
+
+easy-promise@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmmirror.com/easy-promise/-/easy-promise-0.1.0.tgz#a3c4215a0e221482b0421971cb005a2474fc1868"
+  integrity sha512-QfpuGzp/vH9m7j4DXjDWHhI4Ef/IJKQGkN/DsHoUjYAqTWSrIQ+yukwkz8tIvffsgLg2dFfvida0/s+eer220A==
 
 element-plus@^2.4.3:
   version "2.4.3"
@@ -676,6 +693,11 @@ execa@^8.0.1:
     onetime "^6.0.0"
     signal-exit "^4.1.0"
     strip-final-newline "^3.0.0"
+
+extend-promise@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/extend-promise/-/extend-promise-0.0.7.tgz#037388c36f25e5f8ebc0fe38100b9e2ce7be3911"
+  integrity sha512-FLka6uzfpK6aPX0CYwb+wiWd6D/2W4Hg2GOD6j0QHAA/l6GCBUQ8MoWaFkvxyJiMpk92XeIgHgTLAsfcoZiIYg==
 
 fast-glob@^3.3.1, fast-glob@^3.3.2:
   version "3.3.2"
@@ -1043,6 +1065,15 @@ postcss@^8.4.32:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+promise-queue-plus@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmmirror.com/promise-queue-plus/-/promise-queue-plus-1.2.2.tgz#b64e7b55592e8c4791bce22f67835113812ac7a0"
+  integrity sha512-As9heS6Jv7BpPmNd8aUAOHwCsK6khqEIb5UqwXHHJia6KKrnSPNC4sQRhDEh8MnEIE7ydOygzCs6buPEsotwaQ==
+  dependencies:
+    bluebird "^3.0.0"
+    easy-promise "0.1.0"
+    extend-promise "^0.0.7"
+
 proxy-from-env@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmmirror.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
@@ -1132,6 +1163,11 @@ source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+spark-md5@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmmirror.com/spark-md5/-/spark-md5-3.0.2.tgz#7952c4a30784347abcee73268e473b9c0167e3fc"
+  integrity sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==
 
 strip-final-newline@^2.0.0:
   version "2.0.0"
